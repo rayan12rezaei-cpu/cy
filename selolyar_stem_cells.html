@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سلول‌یار | آشنایی با سلول‌های بنیادی</title>
+<style>
+:root{--bg:#f4f8fc;--ink:#172b4d;--muted:#60718a;--blue:#2864dc;--teal:#16a6a1;--card:#fff;--line:#e2eaf4;--soft:#eaf2ff}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,"Vazirmatn",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+header{background:linear-gradient(120deg,#163d83,#2878df 60%,#19aaa2);color:#fff;padding:30px 20px 54px}
+.wrap{max-width:1080px;margin:auto;padding:0 18px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-size:1.05rem;font-weight:bold;letter-spacing:.2px}.tag{border:1px solid #ffffff65;border-radius:99px;padding:4px 12px;font-size:.8rem}
+h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.35;margin:24px 0 8px}.intro{max-width:700px;color:#e6f1ff;margin:0}.hero-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:18px;align-items:center;margin-top:24px}
+.hero-art{background:#ffffff18;border:1px solid #ffffff3b;border-radius:22px;padding:18px;text-align:center;min-height:150px;display:grid;place-items:center}
+.cell{width:112px;height:112px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d7ffff,#6ce0d4 35%,#218bc8 68%,#174e9c);box-shadow:inset 0 0 0 8px #ffffff35,0 12px 30px #103c8b66;position:relative}
+.cell:before,.cell:after{content:"";position:absolute;border-radius:50%;background:#f9a8d4;border:5px solid #fff8;width:24px;height:24px;top:37px;left:39px}
+.cell:after{width:10px;height:10px;top:17px;left:70px;background:#f6d46c;border:2px solid #fff8}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:-26px;position:relative}
+nav button{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 16px;border-radius:12px;cursor:pointer;font:inherit;font-weight:bold;box-shadow:0 5px 16px #193a6410}
+nav button.active,nav button:hover{background:var(--blue);color:white;border-color:var(--blue)}
+main{padding:28px 0 50px}.section{display:none}.section.active{display:block}.section-title{margin:0 0 5px;font-size:1.45rem}.sub{color:var(--muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 24px #1b47720a}.card h3{margin:0 0 8px;font-size:1.05rem}.card p{margin:0;color:var(--muted)}.emoji{font-size:1.8rem;display:inline-grid;place-items:center;width:52px;height:52px;border-radius:15px;background:var(--soft);margin-bottom:10px}
+.pill{display:inline-block;font-size:.78rem;border-radius:99px;background:#e7f8f6;color:#087e79;padding:3px 10px;margin-top:12px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.panel h3{margin-top:0}
+select,button.action{font:inherit;border-radius:10px;border:1px solid #cbd8e8;padding:10px 12px;background:#fff;color:var(--ink)}button.action{background:var(--blue);color:white;border:0;cursor:pointer;font-weight:bold}button.action:hover{filter:brightness(.94)}
+.result{margin-top:14px;padding:14px;border-radius:12px;background:#eff7ff;border:1px solid #d5e8ff;min-height:70px}
+.steps{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:14px 0}.step{padding:8px 12px;border-radius:10px;background:#edf2fa;color:#536781}.step.current{background:#dff7f3;color:#087e79;font-weight:bold}
+.question{padding:18px 0;border-bottom:1px solid var(--line)}.question:last-child{border-bottom:0}.question p{font-weight:bold;margin:0 0 10px}.option{display:block;margin:7px 0;padding:9px 12px;border:1px solid var(--line);border-radius:10px;cursor:pointer}.option:hover{background:#f2f7ff}.option input{margin-left:8px}
+.notice{border-right:4px solid #e7a52b;background:#fff8e8;padding:14px 16px;border-radius:10px;color:#72551b;margin-top:18px}
+footer{border-top:1px solid var(--line);padding:20px;color:var(--muted);font-size:.85rem;text-align:center}
+@media(max-width:760px){.hero-grid,.grid,.split{grid-template-columns:1fr}.hero-art{min-height:130px}.top{align-items:flex-start;flex-direction:column}nav button{flex:1}.wrap{padding:0 14px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="top"><div class="brand">🧬 سلول‌یار</div><span class="tag">مینی‌برنامه آموزشی تعاملی</span></div>
+  <div class="hero-grid">
+   <div><h1>سفر به دنیای سلول‌های بنیادی</h1><p class="intro">با مفاهیم پایه، انواع سلول‌های بنیادی و کاربردهای پژوهشی آن‌ها آشنا شوید؛ سپس آموخته‌های خود را با یک آزمون کوتاه بسنجید.</p></div>
+   <div class="hero-art" aria-label="تصویر نمادین سلول"><div class="cell"></div></div>
+  </div>
+ </div>
+</header>
+<div class="wrap">
+<nav aria-label="بخش‌های برنامه">
+ <button class="active" data-tab="learn">مفاهیم پایه</button>
+ <button data-tab="types">انواع سلول‌ها</button>
+ <button data-tab="lab">آزمایشگاه تعاملی</button>
+ <button data-tab="quiz">آزمون کوتاه</button>
+</nav>
+</div>
+<main class="wrap">
+<section class="section active" id="learn">
+ <h2 class="section-title">سلول بنیادی چیست؟</h2><p class="sub">سلولی که می‌تواند خود را تکثیر کند و در شرایط مناسب به یک یا چند نوع سلول تخصص‌یافته تبدیل شود.</p>
+ <div class="grid">
+  <article class="card"><div class="emoji">🔁</div><h3>خودنوزایی</h3><p>توانایی تقسیم و تولید سلول‌هایی با ویژگی‌های بنیادی، برای حفظ ذخیرهٔ سلولی.</p><span class="pill">تداوم و نگهداری</span></article>
+  <article class="card"><div class="emoji">🌱</div><h3>تمایز</h3><p>فرایندی که طی آن سلول، ویژگی‌ها و کارکرد تخصصی‌تری پیدا می‌کند؛ مانند سلول عصبی یا خونی.</p><span class="pill">تخصص‌یافتن</span></article>
+  <article class="card"><div class="emoji">🔬</div><h3>پژوهش و پزشکی</h3><p>دانشمندان این سلول‌ها را برای مطالعهٔ رشد، مدل‌سازی بیماری‌ها و بررسی درمان‌های آینده مطالعه می‌کنند.</p><span class="pill">پژوهش زیستی</span></article>
+ </div>
+ <div class="notice"><strong>نکتهٔ مهم:</strong> بسیاری از کاربردهای درمانی سلول‌های بنیادی هنوز در مرحلهٔ پژوهش یا کارآزمایی بالینی‌اند. درمان‌های تبلیغ‌شده و تأییدنشده می‌توانند خطرناک باشند؛ دربارهٔ درمان باید با متخصصان واجد صلاحیت مشورت کرد.</div>
+</section>
+<section class="section" id="types">
+ <h2 class="section-title">انواع مهم سلول‌های بنیادی</h2><p class="sub">این دسته‌ها از نظر منشأ و دامنهٔ تمایز با هم تفاوت دارند.</p>
+ <div class="grid">
+  <article class="card"><div class="emoji">🧫</div><h3>جنینی</h3><p>از تودهٔ سلولی داخلی بلاستوسیست به دست می‌آیند و در شرایط مناسب توان تمایز به طیف گسترده‌ای از انواع سلول را دارند.</p><span class="pill">پرتوان</span></article>
+  <article class="card"><div class="emoji">🩸</div><h3>بزرگسال / بافتی</h3><p>در بافت‌هایی مانند مغز استخوان یافت می‌شوند و در نگهداری و ترمیم همان بافت نقش دارند؛ سلول‌های بنیادی خون‌ساز نمونه‌ای شناخته‌شده‌اند.</p><span class="pill">معمولاً چندتوان</span></article>
+  <article class="card"><div class="emoji">🧪</div><h3>القایی پرتوان (iPS)</h3><p>با بازبرنامه‌ریزی سلول‌های بالغ در آزمایشگاه ساخته می‌شوند و ویژگی‌هایی شبیه سلول‌های بنیادی پرتوان پیدا می‌کنند.</p><span class="pill">بازبرنامه‌ریزی‌شده</span></article>
+ </div>
+</section>
+<section class="section" id="lab">
+ <h2 class="section-title">آزمایشگاه تعاملی</h2><p class="sub">یک مسیر آموزشی را انتخاب کنید و ببینید در سطح مفهومی چه اتفاقی می‌افتد.</p>
+ <div class="split">
+  <div class="panel"><h3>شبیه‌سازی تمایز</h3><label for="celltype">نوع سلول اولیه:</label><br><select id="celltype"><option value="pluri">سلول بنیادی پرتوان</option><option value="blood">سلول بنیادی خون‌ساز</option><option value="skin">سلول بنیادی بافت پوست</option></select><br><br><label for="target">مسیر موردنظر:</label><br><select id="target"><option value="nerve">سلول عصبی</option><option value="blood">سلول خونی</option><option value="skin">سلول پوستی</option><option value="muscle">سلول عضلانی</option></select><br><br><button class="action" id="simulate">اجرای شبیه‌سازی</button>
+   <div class="result" id="simresult" aria-live="polite">گزینه‌ها را انتخاب کنید و «اجرای شبیه‌سازی» را بزنید.</div>
+  </div>
+  <div class="panel"><h3>مراحل مفهومی</h3><p class="sub">این نمایش، ساده‌سازی آموزشی است و پروتکل آزمایشگاهی واقعی نیست.</p><div class="steps"><span class="step current">۱. سلول اولیه</span><span>←</span><span class="step">۲. پیام‌های زیستی</span><span>←</span><span class="step">۳. تمایز</span></div><p id="stageText">سلول اولیه ظرفیت‌های مشخصی دارد. پیام‌های شیمیایی و محیط سلولی می‌توانند بر سرنوشت آن اثر بگذارند.</p></div>
+ </div>
+</section>
+<section class="section" id="quiz">
+ <h2 class="section-title">آزمون کوتاه</h2><p class="sub">سه پرسش برای مرور مطالب؛ پاسخ‌ها را انتخاب کنید.</p>
+ <div class="panel">
+  <form id="quizform">
+   <div class="question"><p>۱. کدام عبارت، خودنوزایی را بهتر توصیف می‌کند؟</p><label class="option"><input type="radio" name="q1" value="a"> تبدیل شدن به هر نوع سلول</label><label class="option"><input type="radio" name="q1" value="b"> تولید سلول‌های دارای ویژگی‌های بنیادی از راه تقسیم</label><label class="option"><input type="radio" name="q1" value="c"> از بین رفتن سلول</label></div>
+   <div class="question"><p>۲. سلول‌های بنیادی خون‌ساز عمدتاً چه چیزی تولید می‌کنند؟</p><label class="option"><input type="radio" name="q2" value="a"> انواع سلول‌های خونی</label><label class="option"><input type="radio" name="q2" value="b"> فقط سلول‌های عصبی</label><label class="option"><input type="radio" name="q2" value="c"> فقط سلول‌های پوستی</label></div>
+   <div class="question"><p>۳. سلول‌های iPS چگونه ایجاد می‌شوند؟</p><label class="option"><input type="radio" name="q3" value="a"> با تبدیل مستقیم خون به استخوان در بدن</label><label class="option"><input type="radio" name="q3" value="b"> با بازبرنامه‌ریزی سلول‌های بالغ در آزمایشگاه</label><label class="option"><input type="radio" name="q3" value="c"> فقط از بافت جنینی</label></div>
+   <button class="action" type="submit">بررسی پاسخ‌ها</button>
+  </form><div class="result" id="quizresult" aria-live="polite">هنوز آزمون بررسی نشده است.</div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap">سلول‌یار · محتوای آموزشی عمومی · برای یادگیری، نه تشخیص یا توصیهٔ درمانی</div></footer>
+<script>
+const tabs=document.querySelectorAll('nav button');
+tabs.forEach(btn=>btn.addEventListener('click',()=>{tabs.forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===btn.dataset.tab));}));
+const labels={pluri:'سلول بنیادی پرتوان',blood:'سلول بنیادی خون‌ساز',skin:'سلول بنیادی بافت پوست'};
+const targets={nerve:'سلول عصبی',blood:'سلول خونی',skin:'سلول پوستی',muscle:'سلول عضلانی'};
+document.getElementById('simulate').addEventListener('click',()=>{
+ const a=document.getElementById('celltype').value,b=document.getElementById('target').value;
+ const compatible=a==='pluri'||(a==='blood'&&b==='blood')||(a==='skin'&&b==='skin');
+ const msg=compatible?`در یک مدل مفهومی، ${labels[a]} می‌تواند در شرایط مناسب به سمت ${targets[b]} تمایز پیدا کند. این نتیجه به شرایط زیستی و نوع دقیق سلول بستگی دارد.`:`این مسیر برای ${labels[a]} مسیر معمول یا قابل‌انتظار محسوب نمی‌شود. دامنهٔ تمایز به نوع سلول وابسته است.`;
+ document.getElementById('simresult').textContent=msg;
+ document.getElementById('stageText').textContent=compatible?'در این مدل، پیام‌های زیستی و شرایط محیطی مسیر تخصص‌یافتن را هدایت می‌کنند؛ جزئیات واقعی پیچیده‌تر است.':'این انتخاب نمونه‌ای از محدودیت دامنهٔ تمایز است؛ همهٔ سلول‌های بنیادی نمی‌توانند به هر نوع سلولی تبدیل شوند.';
+});
+document.getElementById('quizform').addEventListener('submit',e=>{
+ e.preventDefault();const answers={q1:'b',q2:'a',q3:'b'};let score=0;
+ Object.keys(answers).forEach(q=>{const v=document.querySelector(`input[name="${q}"]:checked`);if(v&&v.value===answers[q])score++;});
+ const messages=['مرور مطالب پیشنهاد می‌شود؛ بخش مفاهیم پایه را دوباره بخوانید.','شروع خوبی است؛ انواع سلول‌ها را یک بار مرور کنید.','خیلی خوب! فقط یک پاسخ نیاز به بازبینی دارد.','آفرین! هر سه پاسخ درست است.'];
+ document.getElementById('quizresult').textContent=`امتیاز شما: ${score} از 3 — ${messages[score]}`;
+});
+</script>
+</body>
+</html>
